@@ -19,20 +19,20 @@ function init() {
             message: questions[0],
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'description',
             message: questions[1]
         },
-    {
-        type: 'input',
-        name: 'tableOfContents',
-        message: questions[2],
-    },
-{
-    type: 'input',
-    name: 'installation',
-    message: questions[3],
-}])
+        {
+            type: 'editor',
+            name: 'tableOfContents',
+            message: questions[2],
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: questions[3],
+        }])
         .then((data) => writeToFile('README.md', gm(data)))
         .catch((err) => console.error(err));
 }
