@@ -11,7 +11,11 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inq.prompt([{},{},{},{},{},{},{},{},{}])
+    .then((data) => writeToFile('README.md', data))
+    .catch((err) => console.error(err));
+}
 
 // Function call to initialize app
 init();
