@@ -4,7 +4,7 @@ inq = include('inquirer');
 gm = include('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = ['Project Title : ', 'Description : ', 'Table of Contents : ', 'Installation : ', 'Usage : ', 'License : ', 'Contributing : ', 'Tests : ', 'Questions : '];
-
+const questionNames = ['title', 'description', 'toc', 'installation', 'usage', 'license', 'contributing', 'tests', 'questions'];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function() {});
@@ -12,7 +12,11 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inq.prompt([{},{},{},{},{},{},{},{},{}])
+    inq.prompt([
+        {
+            type: 'input',
+            name: questions
+        },{},{},{},{},{},{},{},{}])
     .then((data) => writeToFile('README.md', data))
     .catch((err) => console.error(err));
 }
