@@ -15,7 +15,8 @@ function init() {
     inq.prompt([
         {
             type: 'input',
-            name: questions
+            name: questionNames[0],
+            message: questions[0],
         },{},{},{},{},{},{},{},{}])
     .then((data) => writeToFile('README.md', data))
     .catch((err) => console.error(err));
