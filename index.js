@@ -32,7 +32,33 @@ function init() {
             type: 'input',
             name: 'installation',
             message: questions[3],
-        }])
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: questions[4],
+        },
+        {
+            type: 'checkbox',
+            name: 'license',
+            message: questions[5],
+            choices: ['license1', 'license2', 'license3'],
+        },
+        {
+            type: 'input',
+            name: 'contributing',
+            message: questions[6],
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: questions[7],
+        },
+    {
+        type: 'input',
+        name: 'questions',
+        message: questions[8],
+    }])
         .then((data) => writeToFile('README.md', gm(data)))
         .catch((err) => console.error(err));
 }
