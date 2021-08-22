@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-fs = include('fs');
-inq = include('inquirer');
-gm = include('./utils/generateMarkdown');
+fs = require('fs');
+inq = require('inquirer');
+gm = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = ['Project Title : ', 'Description : ', 'Table of Contents : ', 'Installation : ', 'Usage : ', 'License : ', 'Contributing : ', 'Tests : ', 'Questions : '];
 
