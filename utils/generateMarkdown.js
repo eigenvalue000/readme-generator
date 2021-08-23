@@ -66,27 +66,25 @@ function renderTableOfContents(tocValue) {
   if (tocValue == true) {
     return `## Table of Contents
 
-Title
+[Author](#author)
 
-Author
+[Description](#description)
 
-Description
+[Table of Contents](#table-of-contents)
 
-Table of Contents
+[Installation](#installation)
 
-Installation
+[Usage](#usage)
 
-Usage
+[License](#license)
 
-License
+[Contributing](#contributing)
 
-Contributing
+[Tests](#tests)
 
-Tests
-
-Questions`;
+[Questions](#questions)`;
   } else {
-
+    return '';
   }
 }
 
@@ -110,6 +108,10 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
+\`\`\`md
+![alt text](assets/images/screenshot.png)
+\`\`\`
+
 ## License
 ${renderLicenseSection(data.license, data.title, data.year, data.author)}
 
@@ -122,7 +124,14 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-${data.questions}
+
+Contact the developer and owner of this repository by using the information below : 
+
+GitHub
+https://github.com/${data.github}
+
+Email
+${data.email}
 
 `;
 }

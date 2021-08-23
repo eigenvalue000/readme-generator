@@ -3,7 +3,7 @@ fs = require('fs');
 inq = require('inquirer');
 gm = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-const questions = ['Project Title : ', 'Author : ', 'Copyright Year : ', 'Description : ', 'Table of Contents : ', 'Installation : ', 'Usage : ', 'License : ', 'Contributing : ', 'Tests : ', 'Questions : '];
+const questions = ['Project Title : ', 'Author : ', 'Copyright Year : ', 'Description : ', 'Add a table of contents? ', 'Installation : ', 'Usage : ', 'License : ', 'Contributing : ', 'Tests : ', 'Enter your GitHub username : ', 'Enter your developer email address : '];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -34,7 +34,7 @@ function init() {
             message: questions[3]
         },
         {
-            type: 'editor',
+            type: 'confirm',
             name: 'tableOfContents',
             message: questions[4],
         },
@@ -52,10 +52,10 @@ function init() {
             type: 'checkbox',
             name: 'license',
             message: questions[7],
-            choices: ['GNU AGPLv3', 'GNU GPLv3', 
-                      'Mozilla Public License 2.0', 'Apache License 2.0',
-                      'MIT License', 'Boost Software License 1.0', 
-                      'The Unlicense'],
+            choices: ['GNU AGPLv3', 'GNU GPLv3',
+                'Mozilla Public License 2.0', 'Apache License 2.0',
+                'MIT License', 'Boost Software License 1.0',
+                'The Unlicense'],
         },
         {
             type: 'input',
@@ -67,11 +67,16 @@ function init() {
             name: 'tests',
             message: questions[9],
         },
-    {
-        type: 'input',
-        name: 'questions',
-        message: questions[10],
-    }])
+        {
+            type: 'input',
+            name: 'github',
+            message: questions[10],
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: questions[11],
+        }])
         .then((data) => writeToFile('README.md', gm(data)))
         .catch((err) => console.error(err));
 }

@@ -1,14 +1,16 @@
 
-# Readme Generator
+# Crypto Bot
 ![AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue)
 
 ## Author
 Garrett Kegel
 
 ## Description
-The Readme Generator uses node.js with the file system and inquirer packages to create a prompt in the command line interface that accepts inputs for the project title, the author, the copyright year, the description of the project, a table of contents for a large project, the installation instructions, the usage of the application, the license selected among multiple possible license choices, a section for contributions to the project, a section for the tests used on the application, and a contact section for if someone wants to ask the author questions about the project. This is then written to a markdown file.
+This makes no money.
   
 ## Table of Contents
+
+[Crypto Bot](#Crypto Bot)
 
 [Author](#author)
 
@@ -29,17 +31,13 @@ The Readme Generator uses node.js with the file system and inquirer packages to 
 [Questions](#questions)
   
 ## Installation
-No installation required. Clone the repository and use the command 'node index.js' to start the prompt in the CLI.
+Install this.
 
 ## Usage
-The application will ask a sequence of questions. Enter in the appropriate information for each section and the README.md file will be generated.
-
-```md
-![alt text](assets/images/screenshot.png)
-```
+Use this.
 
 ## License
-Readme Generator
+Crypto Bot
 Copyright (C) 2021  Garrett Kegel
 
 This program is free software: you can redistribute it and/or modify
@@ -55,10 +53,10 @@ GNU Affero General Public License for more details.
 https://www.gnu.org/licenses/agpl-3.0.md
 
 ## Contributing
-Just Garrett Kegel so far.
+Contribute this.
 
 ## Tests
-No tests.
+Test this.
 
 ## Questions
 
@@ -68,5 +66,5 @@ GitHub
 https://github.com/eigenvalue000
 
 Email
-qwxzjkv20946137@gmail.com
+eigenvalue000@gmail.com
 
