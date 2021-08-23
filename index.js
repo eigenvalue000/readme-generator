@@ -1,16 +1,19 @@
-// TODO: Include packages needed for this application
+// These packages are required to run this program.
 fs = require('fs');
 inq = require('inquirer');
 gm = require('./utils/generateMarkdown');
-// TODO: Create an array of questions for user input
+
+// This is an array of questions to be used in the prompt.
 const questions = ['Project Title : ', 'Author : ', 'Copyright Year : ', 'Description : ', 'Add a table of contents? ', 'Installation : ', 'Usage : ', 'License : ', 'Contributing : ', 'Tests : ', 'Enter your GitHub username : ', 'Enter your developer email address : '];
 
-// TODO: Create a function to write README file
+// This function takes in a file name and a data set
+// and writes this to a file.
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function () { });
 }
 
-// TODO: Create a function to initialize app
+// This init function runs the prompt, then writes the input
+// to the README.md file.
 function init() {
     inq.prompt([
         {
