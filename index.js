@@ -42,12 +42,12 @@ function init() {
             message: questions[4],
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'installation',
             message: questions[5],
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'usage',
             message: questions[6],
         },
@@ -61,12 +61,12 @@ function init() {
                 'The Unlicense'],
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'contributing',
             message: questions[8],
         },
         {
-            type: 'input',
+            type: 'editor',
             name: 'tests',
             message: questions[9],
         },
