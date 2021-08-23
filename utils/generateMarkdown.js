@@ -352,7 +352,7 @@ function renderTableOfContents(tocValue) {
 
 [License](#license)
 
-[Contributing](#contributing)
+[Contributing](#how-to-contribute)
 
 [Tests](#tests)
 
