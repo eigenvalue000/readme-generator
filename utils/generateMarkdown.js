@@ -62,6 +62,34 @@ GNU General Public License for more details.`;
   }
 }
 
+function renderTableOfContents(tocValue) {
+  if (tocValue == true) {
+    return `## Table of Contents
+
+Title
+
+Author
+
+Description
+
+Table of Contents
+
+Installation
+
+Usage
+
+License
+
+Contributing
+
+Tests
+
+Questions`;
+  } else {
+
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
@@ -74,8 +102,7 @@ ${data.author}
 ## Description
 ${data.description}
   
-## Table of Contents
-${data.tableOfContents}
+${renderTableOfContents(data.tableOfContents)}
   
 ## Installation
 ${data.installation}
