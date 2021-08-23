@@ -1,16 +1,14 @@
 
 # Crypto Bot
-![AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue)
+![MPL-2.0](https://img.shields.io/badge/license-MPL--2.0-brightgreen)
 
 ## Author
 Garrett Kegel
 
 ## Description
-This makes no money.
+This bot does not make any money. I wish it did.
   
 ## Table of Contents
-
-[Crypto Bot](#Crypto Bot)
 
 [Author](#author)
 
@@ -31,32 +29,24 @@ This makes no money.
 [Questions](#questions)
   
 ## Installation
-Install this.
+Install this application.
 
 ## Usage
-Use this.
+Use this application.
+
+![alt text](assets/images/screenshot.png)
+
 
 ## License
-Crypto Bot
-Copyright (C) 2021  Garrett Kegel
+This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published
-by the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-https://www.gnu.org/licenses/agpl-3.0.md
 
 ## Contributing
-Contribute this.
+Garrett Kegel
 
 ## Tests
-Test this.
+No tests.
 
 ## Questions
 
@@ -66,5 +56,5 @@ GitHub
 https://github.com/eigenvalue000
 
 Email
-eigenvalue000@gmail.com
+qwxzjkv20946137@gmail.com
 

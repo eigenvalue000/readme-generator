@@ -77,7 +77,7 @@ function init() {
             name: 'email',
             message: questions[11],
         }])
-        .then((data) => writeToFile('README.md', gm(data)))
+        .then((data) => writeToFile('README_.md', gm(data)))
         .catch((err) => console.error(err));
 }
 
