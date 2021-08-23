@@ -384,6 +384,8 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
+Screenshot
+
 ![alt text](assets/images/screenshot.png)
 
 
