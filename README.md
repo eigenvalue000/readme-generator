@@ -34,9 +34,9 @@ No installation required. Clone the repository and use the command 'node index.j
 ## Usage
 The application will ask a sequence of questions. Enter in the appropriate information for each section and the README.md file will be generated.
 
-```md
+
 ![alt text](assets/images/screenshot.png)
-```
+
 
 ## License
 Readme Generator
