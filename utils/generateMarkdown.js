@@ -165,8 +165,9 @@ OTHER DEALINGS IN THE SOFTWARE.
     
 For more information, please refer to <https://unlicense.org>`
   } else if (license == 'GNU LGPLv3') {
-    return `                GNU LESSER GENERAL PUBLIC LICENSE
-    Version 3, 29 June 2007
+    return `                
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
 Everyone is permitted to copy and distribute verbatim copies
